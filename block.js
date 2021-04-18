@@ -22,11 +22,7 @@ class Block{
     if (this.body.speed<3){
         this.Visibilty = 255
     }
-    else {
-        World.remove(world, this.body); 
-        push();
-        this.Visibilty = this.Visibilty-5;
-        tint(255, this.Visibilty);
+   
         translate(pos.x, pos.y);
         rotate(angle);
         rectMode(CENTER);
